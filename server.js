@@ -33,7 +33,6 @@ app.get('/', (req, res) => {
         <h2>Desarrollo Teorico</h2>
         <ul>
           <li><a href="/api/desarrollo-teorico/ejercicio-01" target="_blank">Ejercicio-01</a></li>
-          <li><a href="/api/prof-juarez/secciones" target="_blank">/api/prof-juarez/secciones</a></li>
         </ul>
 
         <h2>Desarrollo Practico</h2>
