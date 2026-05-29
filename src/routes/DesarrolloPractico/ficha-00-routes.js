@@ -1,9 +1,8 @@
-// backend/routes/cardRoutes.js
 import { Router } from 'express'
-import { getFicha1 } from '../../controllers/DesarrolloPractico/ficha-00.js'
+import { getFicha0 } from '../../controllers/DesarrolloPractico/ficha-00.js'
 
 const router = Router()
 
-router.get('/ficha-00', getFicha1)
+router.get('/ficha-00', getFicha0)
 
 export default router

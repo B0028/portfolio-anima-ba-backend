@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import ejercicio01 from './src/routes/DesarrolloTeorico/ejercicio-01-routes.js'
 import ficha00 from './src/routes/DesarrolloPractico/ficha-00-routes.js'
+import ficha01 from './src/routes/DesarrolloPractico/ficha-01-routes.js'
 
 const app = express()
 
@@ -32,12 +33,13 @@ app.get('/', (req, res) => {
         
         <h2>Desarrollo Teorico</h2>
         <ul>
-          <li><a href="/api/desarrollo-teorico/ejercicio-01" target="_blank">Ejercicio-01</a></li>
+          <li><a href="/api/desarrollo-teorico/ejercicio-01">Ejercicio-01</a></li>
         </ul>
 
         <h2>Desarrollo Practico</h2>
         <ul>
-          <li><a href="/api/desarrollo-practico/ficha-00" target="_blank">Ficha-00</a></li>
+          <li><a href="/api/desarrollo-practico/ficha-00">Ficha-00</a></li>
+          <li><a href="/api/desarrollo-practico/ficha-01">Ficha-01</a></li>
         </ul>
       </body>
     </html>
@@ -46,6 +48,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/desarrollo-teorico', ejercicio01);
 app.use('/api/desarrollo-practico', ficha00);
+app.use('/api/desarrollo-practico', ficha01);
 
 /*
 app.listen(5000, () => {

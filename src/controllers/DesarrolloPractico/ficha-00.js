@@ -38,7 +38,7 @@ function modificarProducto(id, nuevoNombre) {
     }
 }
 
-export const getFicha1 = (req, res) => {
+export const getFicha0 = (req, res) => {
     res.send(`
     <script>
       window.productos = ${JSON.stringify(productos)};
