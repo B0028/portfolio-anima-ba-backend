@@ -1,10 +1,5 @@
 // 1
-const productos = [
-    { id: 1, nombre: "Mouse" },
-    { id: 2, nombre: "Teclado" },
-    { id: 3, nombre: "Monitor" },
-    { id: 4,nombre: "SSD" },
-];
+import productos from './models/productosModel.js';
 
 // 2
 function listarProductos() {

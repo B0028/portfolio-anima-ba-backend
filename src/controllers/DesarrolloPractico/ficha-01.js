@@ -1,9 +1,4 @@
-const productos = [
-    { id: 1, nombre: "Mouse" },
-    { id: 2, nombre: "Teclado" },
-    { id: 3, nombre: "Monitor" },
-    { id: 4,nombre: "SSD" },
-];
+import productos from './models/productosModel.js';
 
 export const getFicha1productos = (req, res) => {
     res.json(productos)
