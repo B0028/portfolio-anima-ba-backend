@@ -1,4 +1,4 @@
-import productos from './models/productosModel.js';
+import productos from '../../data/models/productosModel.js';
 
 export const agregarProducto = (req, res) => {
     if (!req.body.nombre) {
@@ -14,6 +14,16 @@ export const agregarProducto = (req, res) => {
     
     productos.push(nuevoProducto);
     res.status(201).json(nuevoProducto);
+
+    // cookie
+    /*
+    res.cookie('mis_productos_temporales', JSON.stringify(productos), {
+        httpOnly: true,
+        secure: true,
+        sameSite: 'none'
+    });
+    */
+
 };
 
 export const modificarProducto = (req, res) => {
