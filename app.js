@@ -13,7 +13,8 @@ const app = express()
 app.use(cors({
     origin: [
         'https://react-fichas-verc.vercel.app', 
-        'http://localhost:5173'      
+        'http://localhost:5173',
+        'http://localhost:3173'       
     ],
     credentials: true 
 })); // permite que React le hable desde otro puerto
